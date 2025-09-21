@@ -1,10 +1,6 @@
-INSERT INTO students(name,age,department,grade)
-VALUES('Tina', 22, 'Physics', 89),('Dev', 19, 'Computer Science', 85),('Anu', 20, 'Physics', 90),('Luke', 24, 'Zoology', 70); 
-SELECT* FROM students
-WHERE age>20;
-SELECT* FROM students
-WHERE department IN ('Physics','Computer Science');
-SELECT* FROM students
-WHERE grade = 90;
-SELECT* FROM students
-WHERE grade BETWEEN 70 AND 90;
+INSERT INTO department(name, age, department, grade) VALUES ('Nikhil','19','Computer Science','100'),('Govind','23','Physics','69'),('Akash','22','Maths','90'),('Anjana','21','Computer Science','85');
+
+SELECT * FROM department WHERE age>20;
+SELECT * FROM department WHERE department IN ('Computer Science', 'Physics'); 
+SELECT * FROM department  WHERE grade = 90;
+SELECT * FROM department WHERE grade BETWEEN 70 and 90;
