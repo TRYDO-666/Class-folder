@@ -18,9 +18,9 @@ SELECT name,score
 FROM students
 WHERE city='Chennai' OR 'Mumbai';
 
-SELECT name,course,score,email,phone,city,bonus_point
+SELECT *
 FROM students
-HAVING bonus_point=NULL;
+WHERE bonus_point IS NULL;
 
 
 SELECT name 
